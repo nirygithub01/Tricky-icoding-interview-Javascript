@@ -198,10 +198,179 @@ var x;
 console.log (x);
 */
 
+/** 
 //String coercion
 
 var x = 3;
 
 var y = "3";
 
-console.log(x + y);
+console.log(x + y);//33
+
+var a = 24;
+var b = "Hello ";
+
+console.log(a + b);//24Hello 
+
+
+var name = "vivek";
+
+var surname = "Bisht";
+
+console.log(name + surname);//vivekBisht
+
+var p = 3;
+var q = "3";
+
+console.log(p-q);//0
+
+let c = 3;
+let d = "4";
+
+console.log(c * d);//12
+*/
+
+/** */
+//Bolean 
+
+/** 
+var x = 0;
+var y = 23;
+
+if(x) {console.log(x)} // value of x will not printed because of value of x is 0(false)
+if(y) {console.log(y)} // value of y is printed 23;
+*/
+
+/** 
+var x = 220;
+var y = "Hello";
+var z = undefined;
+x || y
+x || z
+
+if(x || y){
+return true;
+    //console.log("Hwello brother");
+}else if(x || z) {
+
+    console.log("Hello dear");
+
+}else if(x && y) {
+    return true;
+}else if(y && z) {
+    console.log("Hello bro");
+}else {
+    console.log("well");
+}
+*/
+
+/** 
+var a = 12;
+var b = "12";
+
+a == b;
+*/
+
+/** 
+console.log(isNaN ("Hello"))//true
+console.log(isNaN (345));//false
+console.log(isNaN ('1'));//false
+console.log(isNaN (true));//false
+console.log(isNaN (false));//false
+console.log(isNaN (undefined));//true
+*/
+
+//var a = 23;
+//var a= "Hello world";
+
+//console.log(a)
+
+//let b = 34;
+//let x = "Hello bro";
+
+//console.log(b);
+//console.log(x)
+//const c = 45 ;
+//const y =" Yes I got it";
+//console.log(c);
+//console.log(y);
+
+/** 
+var y = 8454;
+var z = y;
+console.log(z);
+var z = 5411;
+
+y = 23;
+console.log(z);
+*/
+
+/** 
+var obj = {name: "vivek", surname:"Bisht"};
+var obj1 = obj;
+console.log(obj1);
+*/
+
+/**Immediately invoked Function */
+
+/**Syntax of IIFE*/
+/** 
+(function() {
+    console.log("Hello bro");
+
+}) ();
+*/
+
+
+/**Higher Order Function */
+
+/** 
+function higherOrder(fn){
+    fn();
+
+}
+higherOrder(function() {console.log("Hello world")
+});
+
+function highOrder2 () {
+    return function() {
+        console.log( "Do something");
+    }
+}
+var x= highOrder2();
+
+x();
+*/
+
+/** this keyword */
+
+/** 
+function thisKeywords() {
+    console.log(this);
+
+}
+thisKeywords();
+*/
+
+/** 
+var obj = {
+    name: "Vivek",
+    getName: function() {
+        console.log(this.name);
+    }
+}
+obj.getName();//Vivek
+*/
+/** 
+var obj = {
+    name :"Vivek",
+    getName: function() {
+        console.log(this.name);
+    }
+}
+obj.getName();//Vivek
+var getName = obj.getName;
+
+var obj2 = {name:"akshay", getName};
+obj2.getName();//akshay
+*/
